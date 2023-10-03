@@ -1,0 +1,111 @@
+.shopPage {
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    
+}
+.products {
+    margin-top: 60px;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+.card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 1600px) {
+    .card-content {
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    
+    }
+}
+@media (max-width: 1200px) {
+    .card-content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+}
+@media (max-width: 992px) {
+    .card-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+}
+@media (max-width: 650px) {
+    .card-content {
+        grid-template-columns: 1fr 1fr;
+    
+    }
+}
+.products .card{
+    margin:10px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.products .card:hover {
+    transform: translateY(-5px);
+}
+.products .card h5 {
+    height: 70px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(107 114 128/1);
+
+}
+.products .card .span-text {
+    color: black;
+}
+
+.products .card .btn {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color:rgb(107 114 128/1);
+    border: none;
+    color: #fff;
+}
+.ps-menu-root {
+    min-height: 100vh !important;
+}
+.firstMenu {
+    margin-top: 30px !important;
+}
+.quntityShop {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white !important;
+}
+.quntityShop p {
+    color: black;
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+.quntityShop button {
+    width: 35px;
+    border-radius: 5px;
+}
+.filter {
+    position: absolute;
+    transition: .3s;
+}
+.ps-sidebar-container {
+    background-color: white !important;
+    
+}
+.button-toogle {
+    margin-top: 20px;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-radius:10px;
+    background-color: green;
+    color: white;
+}

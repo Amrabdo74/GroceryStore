@@ -1,0 +1,54 @@
+.main-section {
+    height: 350px;
+    background-image: url(../../assets/images/faq.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.accordion {
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #eee;
+    padding: 5px;
+}
+
+.accordion>div,
+.accordion button {
+
+    background-color: #eee !important;
+}
+
+.accordion button {
+    border: none !important;
+    box-shadow: none !important;
+    color: #000 !important;
+}
+/* ////////////////////////// */
+.blog-section {
+    height: 350px;
+    background-image: url(../../assets/images/blog.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+@media (max-width: 991px) {
+    .bolgRow .row {
+        flex-direction: column-reverse;
+    }   
+    .row .imgeSol {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px !important;
+    }
+}
+/* /////////////////////////  */
+.contact {
+    height: 350px;
+    background-image: url(../../assets/images/Contact.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+@media (max-width: 768px) {
+    .pargraf p{
+        width: 95% !important;
+    }
+}
